@@ -73,3 +73,16 @@ workflows:
     # - deploy:
     #     requires:
     #       - build-go-executables
+
+jobs:
+    steps:
+      - checkout:
+          path: ~/Application
+
+      - add_ssh_keys:
+          fingerprints:
+            - "SHA256:vezwamw04eDo2W1MuiTwJYQgRGWWEYydZfQzKr0dJYY"
+
+      - run:
+          name: Pull Repository
+          command: git pull origin master
