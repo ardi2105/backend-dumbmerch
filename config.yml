@@ -11,7 +11,7 @@ jobs:
 
       - add_ssh_keys:
           fingerprints:
-            - "github.com"
+            - "SHA256:vezwamw04eDo2W1MuiTwJYQgRGWWEYydZfQzKr0dJYY"
 
       - run:
           name: Pull Repository
