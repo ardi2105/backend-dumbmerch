@@ -7,7 +7,7 @@ jobs:
 
     steps:
       - checkout:
-          path: ~/project
+          path: ~/Application
 
       - add_ssh_keys:
           fingerprints:
